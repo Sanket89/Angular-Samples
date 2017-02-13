@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+var obj = {
+  "a": 1,
+  "b": 2,
+  "c": 3
+};
+
+for (var prop in obj) {
+  if (obj.hasOwnProperty(prop)) { 
+  // or if (Object.prototype.hasOwnProperty.call(obj,prop)) for safety...
+    alert("prop: " + prop + " value: " + obj[prop])
+  }
+}</script>
+</body>
+</html>
